@@ -11,6 +11,7 @@ const Hero = () => {
   const [bigShowImg, setBigShowImg] = useState("");
   return (
     <section
+      id="home"
       className="w-full p-2 flex xl:flex-row flex-col
     min-h-screen max-container justify-center gap-10"
     >
