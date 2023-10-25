@@ -4,14 +4,16 @@ import React from "react";
 interface ButtonProps {
   label: string;
   iconUrl?: string;
+  variant?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, iconUrl }) => {
+const Button: React.FC<ButtonProps> = ({ label, iconUrl, variant }) => {
   return (
     <button
-      className="flex justify-center items-center gap-2 border px-7
-     py-4 text-lg leading-none rounded-full
-      border-coral-red text-white bg-coral-red"
+      className={`flex justify-center items-center gap-2 border-2 px-7
+     py-4 text-lg leading-none rounded-full ${
+       variant ? "text-slate-gray bg-white" : "bg-coral-red text-white"
+     }`}
     >
       {label}
       {iconUrl && (
