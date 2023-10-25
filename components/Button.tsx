@@ -3,7 +3,7 @@ import React from "react";
 
 interface ButtonProps {
   label: string;
-  iconUrl: string;
+  iconUrl?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({ label, iconUrl }) => {
@@ -14,11 +14,13 @@ const Button: React.FC<ButtonProps> = ({ label, iconUrl }) => {
       border-coral-red text-white bg-coral-red"
     >
       {label}
-      <Image
-        src={iconUrl}
-        alt="arrow right Icon"
-        className="h-5 w-5 rounded-full ml-2"
-      />
+      {iconUrl && (
+        <Image
+          src={iconUrl}
+          alt="arrow right Icon"
+          className="h-5 w-5 rounded-full ml-2"
+        />
+      )}
     </button>
   );
 };
