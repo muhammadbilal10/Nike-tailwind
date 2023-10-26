@@ -30,7 +30,7 @@ const Hero = () => {
             The new Arrival
           </span>
           <br />
-          <span className="text-coral-red mt-3 inline-block">Nike</span> Shoes
+          <span className="text-coral-red mt-3 inline-block ">Nike</span> Shoes
         </h1>
         <p
           className="font-montserrat text-lg mt-6
